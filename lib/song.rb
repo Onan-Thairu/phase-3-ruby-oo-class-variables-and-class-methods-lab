@@ -28,6 +28,14 @@ class Song
   def self.genres
     @@genres.uniq
   end
+
+  def self.genre_count
+    @@genres.tally
+  end
+
+  def self.artist_count
+    @@artists.tally
+  end
 end
 
 first = Song.new("Love Yours", "J Cole", "HIP-HOP")
